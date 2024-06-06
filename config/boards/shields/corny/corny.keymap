@@ -42,12 +42,12 @@
 // | ESC  |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | SHFT |  [  |  ]  |  (  |  )  |  -  |                    |  =  |  {  |  }  | "|" |  \  | SHFT |
 // | ALT  |  '  |     |  `  |  +  |  _  |        |  |  boot  |     |     |     |     |  ~  | CTRL |
-//                    | GUI |  '  | SPC |                    | TAB |     | ENT |
+//                    | GUI |  ~  | SPC |                    | TAB |     | ENT |
                         bindings = <
    &kp ESC   &kp EXCL &kp AT   &kp HASH  &kp DLLR &kp PRCNT                    &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp BSPC
    &kp LSHFT &kp LBKT &kp RBKT &kp LPAR  &kp RPAR &kp MINUS                    &kp EQUAL &kp LBRC &kp RBRC        &kp PIPE &kp BSLH  &kp LSHFT
    &kp LALT  &kp SQT  &trans   &kp GRAVE &kp PLUS &kp UNDER &none  &bootloader &trans    &trans   &trans          &trans   &kp TILDE &kp LCTRL
-                               &kp LGUI  &kp SQT  &kp SPACE                    &kp TAB   &trans   &kp RET
+                               &kp LGUI  &kp TILDE  &kp SPACE                    &kp TAB   &trans   &kp RET
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
