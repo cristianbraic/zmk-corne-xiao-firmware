@@ -9,12 +9,12 @@
                 default_layer {
 // -------------------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |                    |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | SHFT |  A  |  S  |  D  |  F  |  G  |                    |  H  |  J   |  K  |  L  |  ;  | SHFT |
+// | SHFT |  A  |  S  |  D  |  F  |  G  |                    |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | ALT  |  Z  |  X  |  C  |  V  |  B  |  MUTE  |  |        |  N  |  M   |  ,  |  .  |  /  | CTRL |
 //                    | GUI | LWR | SPC |                    | ENT | RSE  | TAB |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E    &kp R &kp T                        &kp Y   &kp U &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D    &kp F &kp G                        &kp H   &kp J &kp K     &kp L   &kp SEMI &kp LSHFT
+   &kp LSHFT &kp A &kp S &kp D    &kp F &kp G                        &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
    &kp LALT  &kp Z &kp X &kp C    &kp V &kp B     &kp C_MUTE  &none  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp LCTRL
                          &kp LGUI &mo 1 &kp SPACE                    &kp RET &mo 2 &kp TAB
                         >;
@@ -23,12 +23,12 @@
                 };
                 lower_layer {
 // ------------------------------------------------------------------------------------------------
-// | ESC  |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8   |  9  |  0  | DEL  |
+// | ESC  |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8   |  9  |  0  | BKSP  |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP  | RGT | F11 | SHFT |
 // | ALT | F1  | F2  | F3  | F4  | F5  |  boot  |  |         | F6 |  F7  |  F8  | F9  | F10 | CTRL |
 //                    | GUI |     | SPC |                    | ENT | F12 |  TAB |
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp DEL
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F11  &kp LSHFT
    &kp LALT   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &bootloader  &none  &kp F6   &kp F7   &kp F8 &kp F9    &kp F10  &kp LCTRL
                                         &kp LGUI     &trans       &kp SPACE                        &kp RET  &kp F12  &kp TAB
@@ -39,12 +39,12 @@
 
                 raise_layer {
 // ------------------------------------------------------------------------------------------------
-// | ESC  |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | ESC  |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | DEL  |
 // | SHFT |  [  |  ]  |  (  |  )  |  -  |                    |  =  |  {  |  }  | "|" |  \  | SHFT |
 // | ALT  |  '  |     |  `  |  +  |  _  |        |  |  boot  |     |     |     |     |  ~  | CTRL |
 //                    | GUI |  ~  | SPC |                    | ENT |     | TAB |
                         bindings = <
-   &kp ESC   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                    &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp BSPC
+   &kp ESC   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                    &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp DEL
    &kp LSHFT &kp LBKT &kp RBKT &kp LPAR  &kp RPAR  &kp MINUS                    &kp EQUAL &kp LBRC &kp RBRC        &kp PIPE &kp BSLH  &kp LSHFT
    &kp LALT  &kp SQT  &trans   &kp GRAVE &kp PLUS  &kp UNDER &none  &bootloader &trans    &trans   &trans          &trans   &kp TILDE &kp LCTRL
                                &kp LGUI  &kp TILDE &kp SPACE                    &kp RET   &trans   &kp TAB
