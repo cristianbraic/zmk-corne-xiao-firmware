@@ -31,7 +31,7 @@
    &trans     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6    &kp N7   &kp N8 &kp N9    &kp N0   &trans
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &kp LEFT  &kp DOWN &kp UP &kp RIGHT &kp F11  &trans
    &trans     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &bootloader  &none  &kp F6    &kp F7   &kp F8 &kp F9    &kp F10  &trans
-                                        &trans       &trans       &trans                           &kb PG_UP &trans   &kp F12
+                                        &trans       &trans       &trans                           &kp PG_UP &trans   &kp F12
                         >;ee
 
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -47,7 +47,7 @@
    &trans  &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
    &trans  &kp LBKT &kp RBKT &kp LPAR  &kp RPAR  &kp UNDER                    &kp EQUAL &kp LBRC  &kp RBRC        &kp PIPE &kp BSLH  &trans
    &trans  &kp FSLH &trans   &kp GRAVE &kp PLUS  &trans    &none  &bootloader &trans    &kp QMARK &kp FSLH        &trans   &kp TILDE &trans
-                             &trans    &trans    &trans                       &kb PG_DN &trans    &kp TILDE
+                             &trans    &trans    &trans                       &kp PG_DN &trans    &kp TILDE
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
